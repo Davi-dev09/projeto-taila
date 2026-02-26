@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Taila Garcia</title>
+    <meta
+      name="description"
+      content="Portfólio de projetos residenciais, comerciais e de interiores assinados por Taila Garcia."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header compartilhado -->
+    <header class="header">
+      <div class="container header__content">
+        <a href="index.html#home" class="logo">Taila Garcia</a>
+
+        <nav class="nav" id="mainNav">
+          <ul class="nav__list">
+            <li><a href="index.html#home">Início</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Cabeçalho da página de portfólio -->
+      <section class="page-header">
+        <div class="container">
+          <div class="page-header__content animate-on-scroll">
+            <p class="page-header__eyebrow">Portfólio</p>
+            <h1 class="page-header__title">Seleção de projetos</h1>
+            <p class="page-header__subtitle">
+              Uma curadoria de projetos residenciais, comerciais e de interiores
+              que evidenciam a atenção aos detalhes, a sofisticação e a
+              funcionalidade que orientam cada proposta.
+            </p>
+
+            <div class="breadcrumb">
+              <a href="index.html">Início</a> &nbsp;/&nbsp; <span>Projetos</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Grid de projetos -->
+      <section class="projects-list-page">
+        <div class="container">
+          <div class="portfolio-filters animate-on-scroll">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="residencial">
+              Residencial
+            </button>
+            <button class="filter-btn" data-filter="comercial">
+              Comercial
+            </button>
+            <button class="filter-btn" data-filter="interiores">
+              Interiores
+            </button>
+          </div>
+
+          <div class="projects-list">
+            <!-- Os mesmos projetos da home, com possibilidade de expansão futura -->
+            <article
+              class="portfolio-item animate-on-scroll"
+              data-category="residencial"
+            >
+              <a href="projetos/projeto-residencial-01.html" class="portfolio-link">
+                <div
+                  class="portfolio-item__image portfolio-item__image--residencial"
+                ></div>
+                <div class="portfolio-item__info">
+                  <h3>Residência Horizonte</h3>
+                  <p>Residencial • Maringá - PR</p>
+                </div>
+              </a>
+            </article>
+
+            <article
+              class="portfolio-item animate-on-scroll"
+              data-category="comercial"
+            >
+              <a href="projetos/projeto-comercial-01.html" class="portfolio-link">
+                <div
+                  class="portfolio-item__image portfolio-item__image--comercial"
+                ></div>
+                <div class="portfolio-item__info">
+                  <h3>Studio Concept Office</h3>
+                  <p>Comercial • São Paulo - SP</p>
+                </div>
+              </a>
+            </article>
+
+            <article
+              class="portfolio-item animate-on-scroll"
+              data-category="interiores"
+            >
+              <a href="projetos/projeto-interiores-01.html" class="portfolio-link">
+                <div
+                  class="portfolio-item__image portfolio-item__image--interiores"
+                ></div>
+                <div class="portfolio-item__info">
+                  <h3>Apartamento Lumière</h3>
+                  <p>Interiores • Curitiba - PR</p>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer compartilhado -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <div class="footer__brand">
+          <span class="footer__logo">Taila Garcia</span>
+          <p>
+            Renderização de projetos arquitetônicos com foco em sofisticação, funcionalidade
+            e experiências visuais únicas.
+          </p>
+        </div>
+
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h4>Contato</h4>
+            <ul>
+              <li>
+                <a href="mailto:contato@tailagarcia.arq.br"
+                  >contato@tailagarcia.arq.br</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/5544998834349?text=Olá%20Taila,%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+                  target="_blank"
+                  rel="noopener"
+                  >WhatsApp</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4>Redes sociais</h4>
+            <ul class="footer__social">
+              <li><a href="https://www.instagram.com/tgorender?igsh=a2pmd243MzJvcm42"
+                target="_blank"
+                aria-label="Instagram">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <span>© <span id="year"></span> Taila Garcia.</span>
+          <span>Todos os direitos reservados.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+

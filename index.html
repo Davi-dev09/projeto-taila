@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- SEO básico -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taila Garcia</title>
+    <meta
+      name="description"
+      content="Renderização de projetos arquitetônicos que transforma espaços em experiências visuais. Projetos residenciais, comerciais e interiores com sofisticação, funcionalidade e atenção aos detalhes."
+    />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Open Graph para compartilhamento -->
+    <meta property="og:title" content="Taila Garcia" />
+    <meta
+      property="og:description"
+      content="Renderização de projetos arquitetônicos que transforma espaços em experiências visuais. Especializada em projetos residenciais, comerciais e interiores."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.seu-dominio.com" />
+
+    <!-- Tipografia elegante (Playfair Display + Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- =========================================
+         HEADER FIXO COM MENU RESPONSIVO
+         ========================================= -->
+    <header class="header">
+      <div class="container header__content">
+        <a href="index.html" class="logo">Taila Garcia</a>
+
+        <nav class="nav" id="mainNav">
+          <ul class="nav__list">
+            <li><a href="index.html#home">Início</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <!-- Botão hambúrguer (mobile) -->
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- =========================================
+           HERO / HOME
+           ========================================= -->
+      <section class="hero" id="home">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content animate-on-scroll">
+          <p class="hero__eyebrow">Renderização Arquitetônica</p>
+          <h1 class="hero__title">
+            Visualização que transforma projetos em experiências.
+          </h1>
+          <p class="hero__subtitle">
+            Projetos autorais que unem estética, funcionalidade e identidade,
+            criando ambientes sofisticados e atemporais.
+          </p>
+          <div class="hero__actions">
+            <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+            <a href="#contato" class="btn btn--ghost">Agendar conversa</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+           SOBRE
+           ========================================= -->
+      <section class="section section--light" id="sobre">
+        <div class="container about">
+          <div class="about__image animate-on-scroll">
+            <!-- Substitua pelo seu retrato profissional -->
+            <div class="about__image-placeholder">
+              <span>TG</span>
+            </div>
+          </div>
+
+          <div class="about__content animate-on-scroll">
+            <h2 class="section__title">Sobre Taila Garcia</h2>
+            <p class="section__subtitle">
+              Renderização de projetos com sofisticação, funcionalidade e atenção
+              absoluta aos detalhes.
+            </p>
+            <p>
+              Cada projeto é renderizado de forma personalizada, respeitando a
+              história, o estilo de vida e os objetivos de cada cliente.
+              Criamos visualizações que vão além da estética, entregando
+              representações realistas e experiências memoráveis.
+            </p>
+            <p>
+              Do conceito à visualização final, trabalhamos com rigor
+              técnico e olhar sensível, garantindo um resultado sofisticado,
+              contemporâneo e atemporal.
+            </p>
+
+            <div class="about__highlights">
+              
+              <div class="about__highlight-card">
+                <h3>Acompanhamento completo</h3>
+                <p>
+                  Participação ativa em todas as fases: projeto,
+                  compatibilizações, obra e detalhes finais.
+                </p>
+              </div>
+              <div class="about__highlight-card">
+                <h3>Atendimento exclusivo</h3>
+                <p>
+                  Processo próximo e consultivo, com comunicação clara e
+                  transparente em cada decisão.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+           PROJETOS (PREVIEW DO PORTFÓLIO)
+           ========================================= -->
+      <section class="section section--dark" id="projetos">
+        <div class="container">
+          <div class="section__header animate-on-scroll">
+            <h2 class="section__title section__title--light">Projetos</h2>
+            <p class="section__subtitle section__subtitle--light">
+              Seleção de projetos residenciais, comerciais e interiores que
+              traduzem nossa visão de renderização sofisticada e funcional.
+            </p>
+          </div>
+
+          <!-- Filtros -->
+          <div class="portfolio-filters animate-on-scroll">
+            <button class="filter-btn active" data-filter="all">
+              Todos
+            </button>
+            <button class="filter-btn" data-filter="residencial">
+              Residencial
+            </button>
+            <button class="filter-btn" data-filter="comercial">
+              Comercial
+            </button>
+            <button class="filter-btn" data-filter="interiores">
+              Interiores
+            </button>
+          </div>
+
+          <!-- Grid de projetos -->
+          <div class="portfolio-grid">
+            <!-- Projeto Residencial -->
+            <article
+              class="portfolio-item animate-on-scroll"
+              data-category="residencial"
+            >
+              <a href="projetos/projeto-residencial-01.html" class="portfolio-link">
+                <div
+                  class="portfolio-item__image portfolio-item__image--residencial"
+                ></div>
+                <div class="portfolio-item__info">
+                  <h3>Residência Horizonte</h3>
+                  <p>Residencial • Maringá - PR</p>
+                </div>
+              </a>
+            </article>
+
+            <!-- Projeto Comercial -->
+            <article
+              class="portfolio-item animate-on-scroll"
+              data-category="comercial"
+            >
+              <a href="projetos/projeto-comercial-01.html" class="portfolio-link">
+                <div
+                  class="portfolio-item__image portfolio-item__image--comercial"
+                ></div>
+                <div class="portfolio-item__info">
+                  <h3>Studio Concept Office</h3>
+                  <p>Comercial • São Paulo - SP</p>
+                </div>
+              </a>
+            </article>
+
+            <!-- Projeto Interiores -->
+            <article
+              class="portfolio-item animate-on-scroll"
+              data-category="interiores"
+            >
+              <a href="projetos/projeto-interiores-01.html" class="portfolio-link">
+                <div
+                  class="portfolio-item__image portfolio-item__image--interiores"
+                ></div>
+                <div class="portfolio-item__info">
+                  <h3>Apartamento Lumière</h3>
+                  <p>Interiores • Curitiba - PR</p>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <div class="section__footer animate-on-scroll">
+            <a href="projetos.html" class="btn btn--ghost-light">
+              Ver portfólio completo
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+           SERVIÇOS
+           ========================================= -->
+      <section class="section section--light" id="servicos">
+        <div class="container">
+          <div class="section__header animate-on-scroll">
+            <h2 class="section__title">Serviços</h2>
+            <p class="section__subtitle">
+              Soluções completas em renderização de projetos arquitetônicos e interiores,
+              pensadas para diferentes necessidades e estágios do seu projeto.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            
+
+            <!-- Card: Design de interiores -->
+            <article class="service-card animate-on-scroll">
+              <div class="service-card__icon service-card__icon--alt">
+                <span></span>
+              </div>
+              <h3>Design de interiores</h3>
+              <p>
+                Ambientes internos personalizados, com curadoria de
+                revestimentos, mobiliário, iluminação e marcenaria sob medida.
+              </p>
+            </article>
+
+            <!-- Card: Consultoria -->
+            <article class="service-card animate-on-scroll">
+              <div class="service-card__icon">
+                <span></span>
+              </div>
+              <h3>Consultoria</h3>
+              <p>
+                Encontros estratégicos para análise de imóveis, layout,
+                melhorias e diretrizes de projeto antes da tomada de decisão.
+              </p>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+           CONTATO
+           ========================================= -->
+      <section class="section section--dark" id="contato">
+        <div class="container contact">
+          <div class="contact__info animate-on-scroll">
+            <h2 class="section__title section__title--light">Contato</h2>
+            <p class="section__subtitle section__subtitle--light">
+              Vamos conversar sobre o seu projeto? Envie uma mensagem ou fale
+              diretamente pelo WhatsApp.
+            </p>
+
+            <ul class="contact__details">
+              <li>
+                <span>Designer</span>
+                <strong>Taila Garcia</strong>
+              </li>
+              <li>
+                <span>E-mail</span>
+                <a href="mailto:contato@tailagarcia.arq.br"
+                  >contato@tailagarcia.arq.br</a
+                >
+              </li>
+              <li>
+                <span>Telefone / WhatsApp</span>
+                <a
+                  href="https://wa.me/5544998834349?text=Olá%20Taila,%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20renderização."
+                  target="_blank"
+                  rel="noopener"
+                  >+55 (44) 99883-4349</a
+                >
+              </li>
+            </ul>
+
+            <a
+              href="https://wa.me/5544998834349?text=Olá%20Taila,%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+              target="_blank"
+              rel="noopener"
+              class="btn btn--primary btn--full"
+            >
+              Falar pelo WhatsApp
+            </a>
+          </div>
+
+          <div class="contact__form-wrapper animate-on-scroll">
+            <!-- Formulário de contato (front-end) -->
+            <form class="contact__form" id="contactForm">
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Seu nome completo"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="seuemail@exemplo.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="+55 (44) 99834-9349"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="4"
+                  placeholder="Conte um pouco sobre o seu projeto..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">
+                Enviar mensagem
+              </button>
+
+              <p class="form__note">
+                * Este formulário é demonstrativo. Para atendimento imediato,
+                utilize o botão de WhatsApp.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Mapa incorporado -->
+        <div class="map-wrapper">
+          <!-- Substitua o src abaixo pelo mapa do seu escritório -->
+          <iframe
+            title="Mapa do escritório"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.8131339833204!2d-46.66192752374813!3d-23.501539559799955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8a9ad8f3ad3%3A0x9f3d17058289f6a1!2sEscrit%C3%B3rio%20de%20Arquitetura!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="360"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <div class="footer__brand">
+          <span class="footer__logo">Taila Garcia</span>
+          <p>
+            Renderização de projetos arquitetônicos com foco em sofisticação, funcionalidade
+            e experiências visuais únicas.
+          </p>
+        </div>
+
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h4>Contato</h4>
+            <ul>
+              <li>
+                <a href="mailto:contato@tailagarcia.arq.br"
+                  >contato@tailagarcia.arq.br</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/5544998834349?text=Olá%20Taila,%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+                  target="_blank"
+                  rel="noopener"
+                  >WhatsApp</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4>Redes sociais</h4>
+            <ul class="footer__social">
+              <li><a href="https://www.instagram.com/tgorender?igsh=a2pmd243MzJvcm42" 
+                target="_blank"
+                aria-label="Instagram">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <span>© <span id="year"></span> Taila Garcia.</span>
+          <span>Todos os direitos reservados.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript principal -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
